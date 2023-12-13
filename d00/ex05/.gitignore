@@ -1,0 +1,10 @@
+.basecamp/
+.bash_history
+.bashrc
+.config/
+.gitconfig
+.local/
+.ssh/
+.vim/
+.viminfo
+.vscode/

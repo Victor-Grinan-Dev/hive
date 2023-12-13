@@ -1,0 +1,34 @@
+int print_rows (int max_row)
+{
+	int row;
+	int space;
+	int col, stop_col;
+	int print_count;
+
+	print_count = 0;
+	row = 1;
+	while(row <= max_row)
+	{
+		space = 1;
+		while(space <= (max_row - row))
+		{
+			ft_putchar(' ');
+			space++;
+		}
+		ft_putchar('/');
+		col = 1;
+		stop_col = (2 * row - 1);
+		while(col <= stop_col)
+		{
+			ft_putchar('*');
+			print_count++;
+			col++;
+		}
+		row++;
+		ft_putchar('\\');
+		ft_putchar('\n');
+	}
+	
+	update_print_count(print_count, pyramid_level);
+	return (print_count);
+}
